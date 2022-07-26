@@ -1,0 +1,41 @@
+.roof {
+    height: 80px;
+    align-items: center;
+    display: flex;
+}
+
+.cont {
+    display: inline-flex;
+    margin-left: auto;
+}
+
+.contacts {
+
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+
+    color: var(--second-txt-color);
+    fill: var(--second-txt-color);
+
+    transition: color 250ms var(--timing-function);
+
+    &__icon {
+            padding: 0;
+            margin-right: 10px;
+            transition: fill 250ms var(--timing-function);
+        }
+
+    &:not(:last-child) {
+            margin-right: 50px;
+        }
+    
+    &:hover,
+    &:focus {
+            color: var(--hover-txt-color);
+            fill: var(--hover-txt-color);
+        }
+}

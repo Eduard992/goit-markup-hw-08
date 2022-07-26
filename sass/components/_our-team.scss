@@ -1,0 +1,61 @@
+.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: var(--third-bg-color);
+
+    &__title {
+            margin-bottom: 50px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 42px;
+            text-align: center;
+            letter-spacing: 0.03em;
+    
+            color: var(--main-txt-color)
+        }
+
+    &__list {
+            display: flex;
+            margin-left: -30px;
+            list-style-type: none;
+        }
+
+    &__item {
+            flex-basis: calc((100% - 120px) / 4);
+            margin-left: 30px;
+            background-color: var(--main-bg-color);
+            box-shadow: var(--card-shadow);
+            border-radius: 0px 0px 4px 4px;
+        }
+
+    &__names {
+            margin-bottom: 10px;
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.03em;
+    
+            color: var(--main-txt-color)
+        }
+
+    &__positions {
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            letter-spacing: 0.03em;
+    
+            color: var(--second-txt-color)
+        }
+
+    &__txt {
+            padding-top: 30px;
+        }
+}

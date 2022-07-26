@@ -1,0 +1,44 @@
+.join {
+    width: 206px;
+    margin-left: 70px;
+
+    &__title {
+            margin-right: auto;
+            margin-bottom: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+    
+            color: #FFFFFF;
+        }
+
+    &__list {
+            list-style: none;
+            display: flex;
+        }
+
+    &__item:not(:last-child) {
+            margin-right: 10px;
+        }
+
+    &__link {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+            width: 44px;
+            height: 44px;
+            border-radius: 50px;
+            background-color: rgba(255, 255, 255, 10%);
+            fill: var(--third-txt-color);
+    
+            transition: background-color 250ms var(--timing-function);
+        }
+
+    &__link:hover,
+    &__link:focus {
+            background-color: var(--hover-txt-color);
+        }
+}

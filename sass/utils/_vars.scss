@@ -1,0 +1,18 @@
+:root {
+    /* background color*/
+    --main-bg-color: #ffffff;
+    --second-bg-color: #2f303a;
+    --third-bg-color: #f5f4fa;
+
+    /* font color */
+    --main-txt-color: #212121;
+    --second-txt-color: #757575;
+    --third-txt-color: #ffffff;
+    --hover-txt-color: #2196f3;
+    /* Shadow */
+    --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}

@@ -1,0 +1,27 @@
+.logo-header {
+    color: var(--hover-txt-color);
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+
+    &__web {
+            color: var(--main-txt-color)
+        }
+}
+
+.logo-footer {
+    display: flex;
+    margin-bottom: 20px;
+
+    color: var(--hover-txt-color);
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+
+    &__web {
+        color: var(--third-txt-color);
+    }
+}
+
