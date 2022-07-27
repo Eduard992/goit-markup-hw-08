@@ -7,6 +7,10 @@
             line-height: 42px;
             text-align: center;
             letter-spacing: 0.03em;
+
+            @media screen and (max-width: 480px) {
+                    margin-bottom: 30px;
+                }
     
             color: var(--main-txt-color)
         }
@@ -14,18 +18,25 @@
     &__list {
             display: flex;
             list-style: none;
-            margin-right: -30px;
             padding-bottom: 94px;
+            gap: 30px;
+
+            @media screen and (max-width: 480px) {
+                    flex-wrap: wrap;
+                    padding-bottom: 60px;
+                }
         }
 
     &__item {
-            flex-basis: calc((100% / 5) - 30px);
-            margin-right: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
             width: 170px;
             height: 92px;
+
+            @media screen and (max-width: 480px) {
+                    width: 210px;
+                }
         }
 
     &__link {
@@ -37,6 +48,10 @@
             border: 1px solid #AFB1B8;
             border-radius: 4px;
             fill: #AFB1B8;
+
+            @media screen and (max-width: 480px) {
+                    width: 210px;
+                }
     
     
             transition: fill 250ms var(--timing-function);

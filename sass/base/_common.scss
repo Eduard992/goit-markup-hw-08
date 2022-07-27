@@ -8,6 +8,10 @@ body {
 
 .section {
     padding-top: 94px;
+
+    @media screen and (max-width: 480px) {
+            padding-top: 60px;
+        }
 }
 
 .container {
@@ -16,6 +20,10 @@ body {
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+    @media screen and (max-width: 480px) {
+        width: 480px;
+    }
 }
 
 img {

@@ -1,14 +1,26 @@
 .advant {
     display: flex;
     list-style-type: none;
+    gap: 30px ;
+
+    @media screen and (max-width: 480px) {
+        display: block;
+        width: 450px;
+    }
 
     &__item {
             flex-basis: calc((100% - 90px) / 4);
+
+            @media screen and (max-width: 480px) {
+                margin-bottom: 30px;
+            }
         }
 
-    &__item:not(:last-child) {
-            margin-right: 30px;
+    &__item:last-child {
+        @media screen and (max-width: 480px) {
+            margin-bottom: 60px;
         }
+    }
 
     &__box {
             display: flex;
@@ -28,6 +40,10 @@
             line-height: 1.1;
             letter-spacing: 0.03em;
             text-transform: uppercase;
+
+            @media screen and (max-width: 480px) {
+                    text-align: center;;
+                }
     
             color: var(--main-txt-color)
         }

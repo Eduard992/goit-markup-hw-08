@@ -3,6 +3,12 @@
     padding-bottom: 94px;
     background-color: var(--third-bg-color);
 
+    @media screen and (max-width: 480px) {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+
     &__title {
             margin-bottom: 50px;
             font-family: 'Roboto';
@@ -12,22 +18,32 @@
             line-height: 42px;
             text-align: center;
             letter-spacing: 0.03em;
+
+            @media screen and (max-width: 480px) {
+                    margin-bottom: 30px;
+                }
     
-            color: var(--main-txt-color)
+            color: var(--main-txt-color);
         }
 
     &__list {
             display: flex;
-            margin-left: -30px;
+            gap: 30px;
             list-style-type: none;
+
+            @media screen and (max-width: 480px) {
+                display: block;
+            }
         }
 
     &__item {
-            flex-basis: calc((100% - 120px) / 4);
-            margin-left: 30px;
             background-color: var(--main-bg-color);
             box-shadow: var(--card-shadow);
             border-radius: 0px 0px 4px 4px;
+
+            @media screen and (max-width: 480px) {
+                    margin-bottom: 30px;
+                }
         }
 
     &__names {
@@ -58,4 +74,10 @@
     &__txt {
             padding-top: 30px;
         }
+}
+
+.card_info {
+    @media screen and (max-width: 480px) {
+        padding-bottom: 24px;
+    }
 }
