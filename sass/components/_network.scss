@@ -1,15 +1,8 @@
 .network {
     margin-top: 16px;
-    margin-bottom: 30px;
-    margin-left: 32px;
-    margin-right: 32px;
+    justify-content: center;
     display: flex;
     height: 44px;
-
-    @media screen and (max-width: 480px) {
-        justify-content: center;
-        margin-bottom: 0;
-    }
 
     &__list {
             list-style: none;
