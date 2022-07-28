@@ -1,5 +1,9 @@
 .wedo {
-    padding-bottom: 94px;
+    padding-top: 0px;
+    display: none;
+    @media screen and (min-width: 1200px) {
+            display: block;
+        }
 
     &__title {
             margin-bottom: 50px;
@@ -17,12 +21,10 @@
     &__list {
              display: flex;
              list-style: none;
-             margin-left: -30px;
+             gap: 30px;
          }
 
     &__item {
-             flex-basis: calc((100% - 90px) / 3);
-             margin-left: 30px;
              position: relative;
          }
 

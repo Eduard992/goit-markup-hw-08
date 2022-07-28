@@ -331,7 +331,13 @@ p {
 }
 
 .wedo {
-  padding-bottom: 94px;
+  padding-top: 0px;
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .wedo {
+    display: block;
+  }
 }
 .wedo__title {
   margin-bottom: 50px;
@@ -349,12 +355,9 @@ p {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
-  margin-left: -30px;
+  gap: 30px;
 }
 .wedo__item {
-  -ms-flex-preferred-size: calc((100% - 90px) / 3);
-      flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
   position: relative;
 }
 .wedo__text {
@@ -510,17 +513,19 @@ p {
 }
 
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
+  font-size: 28px;
+  line-height: 33px;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-color);
 }
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 1200px) {
   .clients__title {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 42px;
   }
 }
 .clients__list {

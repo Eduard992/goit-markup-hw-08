@@ -1,16 +1,18 @@
 .clients {
 
     &__title {
-            margin-bottom: 50px;
+            margin-bottom: 30px;
     
             font-weight: 700;
-            font-size: 36px;
-            line-height: 42px;
+            font-size: 28px;
+            line-height: 33px;
             text-align: center;
             letter-spacing: 0.03em;
 
-            @media screen and (max-width: 480px) {
-                    margin-bottom: 30px;
+            @media screen and (min-width: 1200px) {
+                    margin-bottom: 50px;
+                    font-size: 36px;
+                    line-height: 42px;
                 }
     
             color: var(--main-txt-color)
