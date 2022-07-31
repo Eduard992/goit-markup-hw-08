@@ -1,12 +1,28 @@
 .roof {
-    height: 80px;
+    height: 60px;
     align-items: center;
     display: flex;
+
+    @media screen and (min-width: 768px) {
+            height: 80px;
+        }
 }
 
 .cont {
-    display: inline-flex;
+    display: none;
     margin-left: auto;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    
+            font-size: 12px;
+        }
+    @media screen and (min-width: 1200px) {
+            display: inline-flex;
+            gap: 30px;
+        }
 }
 
 .contacts {
@@ -21,6 +37,7 @@
     color: var(--second-txt-color);
     fill: var(--second-txt-color);
 
+    
     transition: color 250ms var(--timing-function);
 
     &__icon {
@@ -31,6 +48,10 @@
 
     &:not(:last-child) {
             margin-right: 50px;
+
+            @media screen and (min-width: 768px) {
+                    margin-right: 0;
+                }
         }
     
     &:hover,

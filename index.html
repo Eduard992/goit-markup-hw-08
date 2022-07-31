@@ -19,7 +19,7 @@
 
 <body>
 	<!-- Крыша -->
-	<!-- <header class="container">
+	<header class="container">
 		<div class="roof">
 			<a class="logo-header" href="./index.html">
 				Web<span class="logo-header__web">Studio</span>
@@ -45,8 +45,32 @@
 					+38 096 111 11 11
 				</a>
 			</div>
+			<button type="button" class="mobile-menu_btn" data-menu-button>
+					<svg class="mobile-menu_icon" width="24px" height="16px">
+						<use class="mobile-menu_burger" href="./images/symbol-defs.svg#icon-mobile-menu"></use>
+						<use class="mobile-menu_close" href="./images/symbol-defs.svg#icon-Mobile-menu_close"></use>
+					</svg>
+			</button>
 		</div>
-	</header> -->
+		<!-- MObile-menu -->
+		<div class="mobile-menu" data-menu>
+			<ul class="mobile-menu_list">
+				<li class="mobile-menu_list-item"><a class="mobile-menu_list_link current" href="">Студия</a></li>
+				<li class="mobile-menu_list-item"><a class="mobile-menu_list_link" href="">Портфолио</a></li>
+				<li class="mobile-menu_list-item"><a class="mobile-menu_list_link" href="">Контакты</a></li>
+			</ul>
+			<ul class="mobile-menu_contact">
+				<li class="mobile-menu_contact-item"><a class="mobile-menu_contact_phone" href="">+38 096 111 11 11</a></li>
+				<li class="mobile-menu_contact-item"><a class="mobile-menu_contact_email" href="">info@devstudio.com</a></li>
+			</ul>
+			<ul class="mobile-menu_network">
+				<li class="mobile-menu_network-item"><a class="mobile-menu_network_link" href="">Instagram</a></li>
+				<li class="mobile-menu_network-item"><a class="mobile-menu_network_link" href="">Twitter</a></li>
+				<li class="mobile-menu_network-item"><a class="mobile-menu_network_link" href="">Facebook</a></li>
+				<li class="mobile-menu_network-item"><a class="mobile-menu_network_link" href="">LinkedIn</a></li>
+			</ul>
+		</div>
+	</header>
 
 	<!-- Основная -->
 	<main>
@@ -488,6 +512,7 @@
 		</div>
 	</footer> -->
 	<script src="./js/modal.js"></script>
+	<script src="./js/menu.js"></script>
 </body>
 
 </html>

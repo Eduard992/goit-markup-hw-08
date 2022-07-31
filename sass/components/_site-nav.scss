@@ -1,7 +1,15 @@
 .site-nav {
-    margin-left: 93px;
+    margin-left: 92px;
     list-style: none;
-    display: flex;
+    display: none;
+
+    @media screen and (min-width: 768px) {
+            display: flex;
+            margin-left: 87px;
+        }
+    @media screen and (min-width: 1200px) {
+            margin-left: 92px;
+        }
 
     &>.item:not(:last-child) {
             margin-right: 50px;
@@ -10,12 +18,11 @@
     & .current {
             color: var(--hover-txt-color);
         }
-}
 
-.current {
-    position: relative;
-
-    &::after {
+    & .current {
+        position: relative;
+    
+        &::after {
             content: "";
             width: 100%;
             height: 4px;
@@ -25,7 +32,10 @@
             left: 0;
             background-color: var(--hover-txt-color);
         }
+    }
 }
+
+
 
 
 .link {
