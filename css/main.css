@@ -35,6 +35,9 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+body .no-scroll {
+  overflow: hidden;
+}
 
 .section {
   padding-top: 60px;
@@ -1245,6 +1248,12 @@ p {
   .mobile-menu_btn {
     display: none;
   }
+}
+
+.mobile-menu_close {
+  position: fixed;
+  top: 10px;
+  right: 5px;
 }
 
 .mobile-menu {
