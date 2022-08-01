@@ -35,7 +35,8 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
-body .no-scroll {
+
+body.no-scroll {
   overflow: hidden;
 }
 
