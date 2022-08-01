@@ -1,5 +1,11 @@
+.footer-info {
+    @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+        }
+}
+
+
 .address {
-    margin-bottom: 9px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -10,6 +16,20 @@
     color: var(--third-txt-color);
 }
 
+.address-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+
+    gap: 8px;
+    
+    @media screen and (min-width: 1200px) {
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+}
+
 .contacts-footer {
     display: flex;
     color: rgba(255, 255, 255, 0.6);
@@ -18,8 +38,4 @@
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
-
-    &:not(:last-child) {
-            margin-bottom: 9px;
-        }
 }

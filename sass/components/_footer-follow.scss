@@ -1,7 +1,11 @@
 .follow {
-    display: flex;
-    align-items: end;
-    margin-left: auto;
+    display: block;
+
+    @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: end;
+            margin-left: auto;
+        }
 
     &__title {
             margin-bottom: 20px;
@@ -14,17 +18,35 @@
             text-transform: uppercase;
     
             color: #FFFFFF;
+
+            @media screen and (min-width: 1200px) {
+                    text-align: start;
+                }
         }
 
     &__input {
             position: relative;
-            display: flex;
-            flex-direction: column;
+            text-align: center;
+
+            @media screen and (min-width: 768px) {
+                    max-width: 450px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+            @media screen and (min-width: 1200px) {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 5px;
+                }
         }
 
     &__fill {
-            width: 358px;
+            width: 100%;
             height: 50px;
+            margin-top: 20px;
+            margin-bottom: 20px;
             padding-left: 16px;
     
             border: 1px solid rgba(255, 255, 255, 0.3);
@@ -35,20 +57,28 @@
             color: var(--third-txt-color);
             cursor: pointer;
             outline: transparent;
-        }
 
-    &::placeholder {
+        &::placeholder {
             font-weight: 400;
             font-size: 16px;
             line-height: 20px;
             letter-spacing: 0.03em;
+        
             color: rgba(255, 255, 255, 0.6);
+            }
+
+            @media screen and (min-width: 1200px) {
+                    width: 358px;
+                    margin: 0;
+                }    
         }
+
+    
 
     &__button {
             display: flex;
-            margin-left: 12px;
-            margin-top: 35px;
+            margin-left: auto;
+            margin-right: auto;
     
             align-items: center;
             justify-content: center;
@@ -67,6 +97,11 @@
             background-color: #2196F3;
             color: #FFFFFF;
             cursor: pointer;
+
+
+            @media screen and (min-width: 1200px) {
+                    margin-left: 10px;
+                }
         }
 
     &__icon {

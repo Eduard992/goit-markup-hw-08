@@ -16,7 +16,8 @@
 	<link rel="stylesheet" href="./css/main.min.css">
 	<title>Document</title>
 </head>
-<header class="container">
+<header class="header-border">
+	<div class="container">
 		<div class="roof">
 			<a class="logo-header" href="./index.html">
 				Web<span class="logo-header__web">Studio</span>
@@ -49,11 +50,13 @@
 					</svg>
 			</button>
 		</div>
+	</div>
+		
 		<!-- MObile-menu -->
 		<div class="mobile-menu" data-menu>
 			<ul class="mobile-menu_list">
-				<li class="mobile-menu_list-item"><a class="mobile-menu_list_link current" href="">Студия</a></li>
-				<li class="mobile-menu_list-item"><a class="mobile-menu_list_link" href="">Портфолио</a></li>
+				<li class="mobile-menu_list-item"><a class="mobile-menu_list_link" href="">Студия</a></li>
+				<li class="mobile-menu_list-item"><a class="mobile-menu_list_link current" href="">Портфолио</a></li>
 				<li class="mobile-menu_list-item"><a class="mobile-menu_list_link" href="">Контакты</a></li>
 			</ul>
 			<ul class="mobile-menu_contact">
@@ -232,65 +235,70 @@
 	</section>
 </main>
 <!-- Футер -->
-<footer class="section footer">
-		<div class="container main">
-			<div class="footer-info">
-				<a class="logo-footer" href="./index.html">
-					Web
-					<span class="logo-footer__web">Studio</span>
-				</a>
-				<address class="address-footer">
-					<p class="address">г. Киев, пр-т Леси Украинки, 26</p>
-					<a class="contacts-footer" href="info@example.com">info@example.com</a>
-					<a class="contacts-footer" href="tel:+380991111111">+38 099 111 11 11</a>
-				</address>
-			</div>
-			<div class="join">
-				<h2 class="join__title">Присоединяйтесь</h2>
-				<ul class="join__list">
-					<li class="join__item">
-						<a href="" class="join__link">
-							<svg class="join-icon" width="20px" height="20px">
-								<use href="./images/symbol-defs.svg#icon-instagram1"></use>
-							</svg>
+		<footer class="section footer">
+			<div class="container main">
+				<div class="footer-box">
+					<div class="footer-info">
+						<a class="logo-footer" href="./index.html">
+							Web
+							<span class="logo-footer__web">Studio</span>
 						</a>
-					</li>
-					<li class="join__item">
-						<a href="" class="join__link">
-							<svg class="join-icon" width="20px" height="20px">
-								<use href="./images/symbol-defs.svg#icon-twitter1"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="join__item">
-						<a href="" class="join__link">
-							<svg class="join-icon" width="20px" height="20px">
-								<use href="./images/symbol-defs.svg#icon-facebook1"></use>
-							</svg>
-						</a>
-					</li>
-					<li class="join__item">
-						<a href="" class="join__link">
-							<svg class="join-icon" width="20px" height="20px">
-								<use href="./images/symbol-defs.svg#icon-linkedin1"></use>
-							</svg>
-						</a>
-					</li>
-				</ul>
-			</div>
-			<form class="follow">
-				<div class="follow__input">
-					<label for="footer-mail" class="follow__title">подпишитесь на рассылку</label>
-					<input class="follow__fill" type="email" name="email" id="footer-mail" placeholder="E-mail">
+						<address class="address-footer">
+							<p class="address">г. Киев, пр-т Леси Украинки, 26</p>
+							<a class="contacts-footer" href="info@example.com">info@example.com</a>
+							<a class="contacts-footer" href="tel:+380991111111">+38 099 111 11 11</a>
+						</address>
+					</div>
+					<div class="join">
+						<h2 class="join__title">Присоединяйтесь</h2>
+						<ul class="join__list">
+							<li class="join__item">
+								<a href="" class="join__link">
+									<svg class="join-icon" width="20px" height="20px">
+										<use href="./images/symbol-defs.svg#icon-instagram1"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="join__item">
+								<a href="" class="join__link">
+									<svg class="join-icon" width="20px" height="20px">
+										<use href="./images/symbol-defs.svg#icon-twitter1"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="join__item">
+								<a href="" class="join__link">
+									<svg class="join-icon" width="20px" height="20px">
+										<use href="./images/symbol-defs.svg#icon-facebook1"></use>
+									</svg>
+								</a>
+							</li>
+							<li class="join__item">
+								<a href="" class="join__link">
+									<svg class="join-icon" width="20px" height="20px">
+										<use href="./images/symbol-defs.svg#icon-linkedin1"></use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+					</div>
 				</div>
-				<button class="follow__button" type="submit">Подписаться
-				<svg class="follow__icon" width="24px" height="24px">
-					<use href="./images/symbol-defs.svg#icon-icon-send"></use>
-				</svg>
-				</button>
-			</form>
-		</div>
-	</footer>
+				<form class="follow">
+					<div class="follow__input">
+						<label for="footer-mail" class="follow__title">подпишитесь на рассылку</label>
+						<input class="follow__fill" type="email" name="email" id="footer-mail" placeholder="E-mail" />
+					</div>
+					<button class="follow__button" type="submit">
+						Подписаться
+						<svg class="follow__icon" width="24px" height="24px">
+							<use href="./images/symbol-defs.svg#icon-icon-send"></use>
+						</svg>
+					</button>
+				</form>
+			</div>
+		</footer>
+	<script src="./js/modal.js"></script>
+	<script src="./js/menu.js"></script>
 </body>
 
 </html>

@@ -12,16 +12,27 @@
 
 .logo-footer {
     display: flex;
+    justify-content: center;
     margin-bottom: 20px;
 
     color: var(--hover-txt-color);
     text-decoration: none;
     font-family: Raleway, sans-serif;
-    font-size: 26px;
-    line-height: 1.2;
+    font-size: 24px;
+    line-height: 28px;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 26px;
+            line-height: 31px;
+            justify-content: flex-start;
+        }
 
     &__web {
         color: var(--third-txt-color);
     }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 20px;
+        }
 }
 
