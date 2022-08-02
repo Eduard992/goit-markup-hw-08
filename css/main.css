@@ -1277,10 +1277,6 @@ p {
   color: var(--second-txt-color);
 }
 
-.portfolio {
-  padding-bottom: 94px;
-}
-
 .portfolio-thumb {
   position: relative;
   overflow: hidden;
@@ -1346,7 +1342,7 @@ p {
 }
 
 .filter-button {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1370,6 +1366,15 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filter-button {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 50px;
   }
 }
 
