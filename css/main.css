@@ -970,6 +970,14 @@ p {
   -webkit-transition: opacity 250ms var(--timing-function);
   transition: opacity 250ms var(--timing-function);
 }
+@media screen and (max-width: 479px) {
+  .backdrop {
+    padding-top: 94px;
+    padding-bottom: 93px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
@@ -1025,13 +1033,24 @@ p {
   left: 50%;
   -webkit-transform: scale(1) translate(-50%, -50%);
           transform: scale(1) translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
   background-color: var(--main-bg-color);
   -webkit-transition: -webkit-transform 250ms var(--timing-function);
   transition: -webkit-transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function);
   transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+}
+@media screen and (max-width: 1199px) {
+  .modal {
+    height: 609px;
+    width: 100%;
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__fill {
   position: relative;
