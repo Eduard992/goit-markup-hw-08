@@ -1,0 +1,16 @@
+.hui {
+    width: 320px;
+    padding: 60px 20px;
+}
+
+.products {
+    background-color: yellow;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.product_list {
+    list-style: none;  
+}
